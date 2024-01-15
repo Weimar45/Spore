@@ -1,0 +1,22 @@
+---
+title: "**Proyecto SARS-CoV-2**"
+author: "**Alejandro Navas González**"
+date: today
+thanks: "Andera Projekt"
+format: 
+  pdf:
+    documentclass: report
+    classoption: [twocolumn]
+    highlight-style: breezedark
+editor: source
+warning: false
+---
+
+## Introducción
+
+Los coronavirus son un grupo diverso de virus con uno de los genomas más largos de todos los virus de ARN conocidos. El elemento común de todos los coronavirus son sus proteínas en forma de corona en el exterior (de ahí obtienen su nombre), llamadas proteínas de espiga (*spike*). En conjunto, esta gran familia de virus infecta aves, animales y, más comúnmente, pequeños mamíferos como los murciélagos. Varios coronavirus infectan a los seres humanos y generalmente causan síntomas leves. Más recientemente, estos patógenos han sido responsables de varios brotes de enfermedades notablemente asociados con una forma aguda de infección. Estos brotes incluyen el brote del síndrome respiratorio agudo severo (SARS) de 2002-2003 en Asia, el brote del síndrome respiratorio de Oriente Medio (MERS) en Oriente Medio y Corea del Sur en 2015, y el brote más reciente en 2019. Muchos de los brotes tuvieron su origen en China y se propagaron primero en países asiáticos. Los brotes se clasifican como epidemias (un brote local) y pandemias (un brote global). El brote más reciente es una pandemia y fue causado por un coronavirus previamente no identificado en humanos (SARS-CoV-2, también conocido como COVID-19) y surgió inesperadamente en China en diciembre de 2019.
+
+
+
+
+
