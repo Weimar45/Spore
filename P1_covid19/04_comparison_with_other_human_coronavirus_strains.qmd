@@ -1,0 +1,15 @@
+---
+title: "**Proyecto SARS-CoV-2**"
+author: "**Alejandro Navas González**"
+date: today
+thanks: "Andera Projekt"
+format: 
+  pdf:
+    documentclass: report
+    classoption: [twocolumn]
+    highlight-style: breezedark
+editor: source
+warning: false
+---
+
+# 

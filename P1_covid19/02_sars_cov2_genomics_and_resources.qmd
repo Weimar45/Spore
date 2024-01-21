@@ -1,0 +1,48 @@
+---
+title: "**Proyecto SARS-CoV-2**"
+author: "**Alejandro Navas González**"
+date: today
+thanks: "Andera Projekt"
+format: 
+  pdf:
+    documentclass: report
+    classoption: [twocolumn]
+    highlight-style: breezedark
+editor: source
+warning: false
+---
+
+# Genoma del SARS-Cov2
+
+![](images/004.png)
+
+El virus en sí mismo no está realmente vivo: es una bola de grasa que contiene un genoma. Este genoma solo "funcionará" dentro de un huésped adecuado. Por lo tanto, en el núcleo del virus se encuentra su genoma: una secuencia de letras que contiene toda la información necesaria para replicar y ensamblar un virus. Antes de empezar a buscar dónde se puede encontrar esta secuencia, debemos considerar que, en el caso de COVID-19, la enfermedad es causada por un tipo específico de virus, denominado "virus de ARN de cadena positiva" debido a cómo se almacena esta información.
+
+El SARS-COV2 es un virus de ARN de cadena simple, que es una categoría de virus que no codifican su información genética en ADN, sino en una sola cadena de ARN. Los virus de ARN son la causa más común de enfermedades emergentes en humanos, atribuible a la alta tasa de mutación en los virus de ARN en comparación con los virus de ADN. El ADN es una macromolécula mucho más estable en comparación con el ARN. Los virus de ARN replican sus genomas utilizando una ARN polimerasa dependiente de ARN (RdRp) codificada por el virus. El genoma de ARN es la plantilla para la síntesis de cadenas adicionales de ARN. Durante la replicación de los virus de ARN, deben sintetizarse al menos tres tipos de ARN: el genoma, una copia del genoma (genoma copia) y los ARNm. Algunos virus de ARN, incluidos los coronavirus, también sintetizan copias de ARNm subgenómicos. Los virus con genomas de ARN de cadena simple (+ssRNA) que pueden actuar directamente como ARNm se conocen como virus de ARN de sentido positivo. De manera similar, los virus de ARN de cadena simple con genomas que no pueden ser traducidos inmediatamente por los ribosomas sino que se utilizan como plantilla para la producción de ARNm se conocen como virus de ARN de sentido negativo (-ssRNA). Los virus +ssRNA son más abundantes que cualquier otra clase de virus e infectan una amplia gama de especies huéspedes. Incluyen siete familias virales humanas diferentes, incluidos los coronavirus, flavivirus y picornavirus, que causan enfermedades significativas en humanos.
+
+Dado que el genoma de los virus +ssRNA actúa como ARNm, estos virus tienen información genética que es infecciosa. Sus genomas son traducidos por los ribosomas del huésped y tienen tapas de 5′ (o proteínas que actúan de manera similar a una tapa de 5′) y a menudo contienen secuencias de cola de poli(A) en el extremo 3′. Esta información es importante ya que estaremos analizando la secuencia para ver qué podría significar.
+
+Encontrar Datos sobre el Genoma del SARS-COV2
+Hay diferentes recursos/repositorios públicamente disponibles que pueden proporcionar datos genómicos del SARS-COV2. Además, hay diferentes herramientas/softwares que se pueden emplear para visualizar y analizar datos. Algunos de ellos se mencionan a continuación.
+
+[NCBI Virus](https://www.ncbi.nlm.nih.gov/labs/virus/vssi/#/)
+
+NCBI Virus es uno de los principales repositorios de los cuales podemos obtener datos de secuencia del virus SARS-COV2 y secuencias genómicas de otras cepas de coronavirus. Los usuarios pueden obtener secuencias completas y parciales de nucleótidos y proteínas. Además, los usuarios pueden especificar varios filtros como huésped, fuente, región geográfica, completitud de la secuencia, etc.
+
+URL para Datos de SARS-COV-2: https://www.ncbi.nlm.nih.gov/labs/virus/vssi/#/virus?SeqType_s=Nucleotide&VirusLineage_ss=SARS-CoV-2,%20taxid:2697049
+
+Herramientas Importantes para Visualización/Análisis
+
+El usuario debe instalar estas herramientas para fines de visualización en este proyecto.
+
+1. [FigTree](http://tree.bio.ed.ac.uk/software/figtree/): Para Árbol Filogenético
+
+FigTree está diseñado como un visor gráfico de árboles filogenéticos y como un programa para producir figuras listas para publicación.
+
+2. [UGENE](http://ugene.net): Para Alineamiento de Secuencias Múltiples
+
+Unipro UGENE es un software de código abierto multiplataforma para gestionar, analizar y visualizar sus datos. UGENE integra herramientas de bioinformática ampliamente utilizadas dentro de una interfaz de usuario común. Proporciona módulos de visualización para objetos biológicos como secuencias de genoma anotadas, datos de ensamblaje de Secuenciación de Nueva Generación (NGS), alineamientos de secuencias múltiples, árboles filogenéticos y estructuras 3D.
+
+3. [ChimeraX](https://www.cgl.ucsf.edu/chimerax/): Para Estructura
+
+UCSF ChimeraX (o simplemente ChimeraX) es el programa de visualización molecular de próxima generación del Resource for Biocomputing, Visualization, and Informatics (RBVI).

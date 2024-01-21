@@ -1,0 +1,128 @@
+---
+title: "**Proyecto SARS-CoV-2**"
+author: "**Alejandro Navas González**"
+date: today
+thanks: "Andera Projekt"
+format: 
+  pdf:
+    documentclass: report
+    classoption: [twocolumn]
+    highlight-style: breezedark
+editor: source
+warning: false
+---
+
+# Origen Zoonótico
+
+Siempre que ocurre un brote pandémico, hay varias preguntas que necesitan ser respondidas. Estas preguntas pueden ser cualquiera de las siguientes: ¿de dónde provino este nuevo coronavirus? ¿Qué animal, qué ubicación, cómo empezó a infectar a los humanos? Para comprender y diseñar la vacuna contra cualquier virus, necesitamos abordar estas preguntas. En este objetivo, nuestro objetivo es entender su origen zoonótico, es decir, de qué animal ha originado. Para abordar esta pregunta, tendremos que encontrar patrones de datos en los genomas disponibles de los coronavirus que puedan ayudar a responder esta pregunta.
+
+# Análisis Filogenético
+
+## Metodología
+
+El enfoque de análisis filogenético nos puede ayudar a entender el origen del nuevo SARS-COV-2. Para hacerlo, nuestro objetivo es comparar filogenéticamente las secuencias del genoma del SARS-COV-2 con secuencias de otras cepas de coronavirus de otros animales. Como esta pandemia se originó en China, en nuestro objetivo, nos centramos en China como "ubicación geológica" y queremos comparar cepas de SARS-COV-2 humano, coronavirus de murciélagos y pangolines.
+
+Nota: Aquí, estamos considerando solo estos organismos (ya que se ha estudiado), pero se podrían comparar cepas de otros animales también si se produce una nueva infección/epidemia desconocida.
+
+Paso 1: Tomar secuencias FASTA de NCBI de diferentes organismos
+Para entender el origen zoonótico, buscaremos en NCBI virus (https://www.ncbi.nlm.nih.gov/labs/virus/vssi/#/ ). Buscaremos Coronaviridae como se muestra en la figura a continuación:
+
+![](images/005.png)
+
+A continuación, aplicaremos filtros específicos para seleccionar las secuencias (como se muestra en la figura a continuación):
+
+Seleccionar "China" como una región geográfica, ya que sabemos que COVID-19 se inició en China;
+
+Luego, "Completo" como "Completitud de Nucleótidos" para eliminar cualquier secuencia parcial. Después, humanos, murciélagos y pangolines como "Huésped" para la infección por coronavirus.
+
+![](images/006.png)
+## Dataset
+
+Conjunto de Datos
+
+Hemos descargado/obtenido 3 secuencias de 4 diferentes orígenes de organismos/especies, es decir, SARS-COV2 humano, SARS-COV de murciélago, coronavirus de murciélago, coronavirus de pangolín, como se muestra en la tabla a continuación. Hemos descargado secuencias en 4 grupos independientes, es decir, Coronavirus de Murciélago, SARS-Coronavirus de Murciélago, SARS-COV2 Humano, Coronavirus de Pangolín. Además, también hemos descargado el genoma de referencia para SARS-COV-2 tanto como un archivo de secuencia fasta como también un archivo GENBANK. El archivo GenBank se utilizará para la traducción de codones durante el análisis filogenético.
+
+![](images/007.png)
+
+##Análisis Filogenético
+
+Una vez que tengamos las secuencias, realizaremos el análisis filogenético utilizando el módulo "Árbol Filogenético" de la plataforma T-Bioinfo como se muestra en la figura a continuación:
+
+1. Paso 1: Seleccionar el módulo Árbol Filogenético en la plataforma T-bioinfo.
+
+2. Paso 2: Seleccionar el tipo de datos NGS como FASTA.
+
+3. Paso 3: Subir archivos, es decir, secuencias FASTA.
+
+4. Paso 4: Crear grupos utilizando la opción de Selección de GRUPO y arrastrar los archivos a los grupos. Aquí, hemos creado cuatro grupos, uno para cada uno de SARS-COV2 humano, SARS-COV de murciélago, coronavirus de murciélago y coronavirus de pangolín.
+
+5. Paso 5: Marco de Codificación de Traducción: Subir el genoma de referencia en formato de archivo GenBank para generar el marco de codones de traducción. Es necesario ya que deseamos analizar mutaciones o cambios que ocurren a nivel de aminoácidos. El archivo GenBank comprende información sobre las regiones de codificación de la secuencia (CDS - secuencia de definición de codificación).
+
+6. Paso 6: Outgroup: Aquí, estamos omitiendo esta opción. Si deseas entender los puntos de tiempo evolutivos de origen.
+
+7. Paso 7: Iniciar: Al hacer clic en "Iniciar", comenzaremos a construir la tubería.
+
+8. Paso 8: Luego, realizar el alineamiento de secuencias múltiples haciendo clic en la opción "Alineamiento de Secuencias Múltiples".
+
+9. Paso 9: A continuación, hacer clic en "Alineamiento de Secuencias Múltiples de Aminoácidos" traduce el alineamiento MSA de secuencias de nucleótidos en alineamientos MSA de codones y los aminoácidos que coinciden con los codones. Esto se hace adquiriendo un archivo GenBank (subido como archivo 'outgroup for framing codon').
+
+10. Paso 10: Seleccionar Posición de Codón MSA: Aquí, no estamos eligiendo ninguna posición específica. Estamos considerando solo las posiciones predeterminadas.
+
+11. Paso 11: A continuación, para generar un árbol filogenético, estamos seleccionando la opción "Todos los métodos de filogenia" con los Nucleótidos como parámetro de "Tipo de Secuencia". Esto ejecutará automáticamente todos los métodos que incluyen Ape, BEAST de tamaño constante de coalescencia, proceso de especiación BEAST yule, y proceso de especiación BEAST Birth-Death.
+
+12. Paso 12: Postprocesamiento usando la opción "TreeSpace". El módulo TreeSpace genera un árbol mediano a partir del múltiple árbol. Esto se realiza en dos pasos. Primero, el algoritmo realiza cálculos de distancia por pares entre los árboles y luego construye el árbol mediano (epicentro) para el cual la suma de distancias a todos los demás árboles del conjunto es mínima.
+
+13. Paso 13: Hacer clic en "Finalizar" para completar el análisis filogenético.
+
+Enlace de la DEMO de la Tubbería: https://server.t-bio.info/pipelinesphylogenetictree/demopipelines/demo-sars-cov2-origin
+
+Los resultados de la tubería se han guardado en el directorio de results. 
+
+# Resultados de Salida
+
+![](images/008.png)
+
+Después de completar la tubería, hemos obtenido varios resultados bajo la opción "DESCARGAR ARCHIVOS DE SALIDA DE LA TUBERÍA". El "Árbol Filogenético Mediano" representado por "_MedianTree_plot.pdf" y "median_phylogeneticTree.tre" muestra el árbol filogenético mediano y "_All_trees_plot.pdf" representa los cuatro árboles generados por cada uno de los cuatro métodos. "_AllInputData_msa_out_FASTA.fa" y "_AllInputData_msa_out_FASTA.fa.clustal" representan el alineamiento de secuencias múltiples. "_FullTable.tsv" representa las mutaciones. El árbol filogenético en el archivo "median_phylogeneticTree.tre" se puede visualizar en el software/aplicación FigTree. El alineamiento de secuencias múltiples presente en el archivo "_AllInputData_msa_out_FASTA.fa" se puede visualizar utilizando múltiples softwares como UGENE.
+
+## Conclusión
+
+![](images/009.png)
+
+Si observamos los árboles filogenéticos generados a partir del análisis, es claramente visible que el coronavirus de murciélago es el más temprano en el origen, que podría haber mutado para generar el SARS-COV2 humano y el coronavirus de pangolín. Además, indica que el SARS-COV2 y los pangolines tienen relaciones evolutivas más cercanas ya que se encuentran en clados más próximos. Estos resultados indican que el SARS-COV-2 podría haberse originado a partir del coronavirus de pangolín, ya que el coronavirus de pangolín y el SARS-COV-2 tienen relaciones evolutivas más cercanas.
+
+# Alineamiento Múltiple de Secuencias (MSA)
+
+## Alineamiento Múltiple de Secuencias (MSA) a Nivel de Nucleótidos
+
+A continuación, para entender la razón o causa por la cual el coronavirus de pangolín parece estar más cercano al SARS-COV2 en comparación con el coronavirus de murciélago, podemos realizar y visualizar alineamientos múltiples. Como hemos obtenido MSA de nuestra tubería, visualicémoslo en UGENE.
+
+Podemos ver claramente una mayor variación o mutaciones en el coronavirus de murciélago en comparación con el SARS-COV2 y el coronavirus de pangolín (como se muestra en la figura a continuación).
+
+![](images/010.png)
+
+En la imagen anterior se muestra el análisis de MSA a Nivel de Nucleótidos de SARS-COV2 Humano, SARS de Murciélago, Coronavirus de Murciélago y Coronavirus de Pangolín que Representa la Disimilitud (en porcentaje) con Respecto al Genoma de Referencia de SARS-COV2 (visualización usando UGENE).
+
+### Matriz de Distancia/Similitud en Porcentaje:
+
+Para cuantificar las diferencias en las secuencias de SARS-COV2 y otras cepas de coronavirus, podemos generar la matriz de similitud o distancia. La matriz de distancia muestra claramente que el SARS-COV2 y los pangolines son más similares (85% de similitud). Mientras que, el SARS-COV2 tiene aproximadamente un 78-79% de similitud con el coronavirus de murciélago, como se muestra en la figura a continuación.
+
+![](images/011.png)
+Figura: Matriz de Distancia/Similitud de MSA de SARS-COV2 Humano, SARS de Murciélago, Coronavirus de Murciélago y Coronavirus de Pangolín que Representa la Similitud (en porcentaje) Respecto al Genoma de Referencia de SARS-COV2 (Visualización Utilizando UGENE)
+
+Alineamiento Múltiple de Secuencias (MSA) a Nivel de Aminoácidos (AA)
+A continuación, para entender las diferencias en las secuencias a nivel de aminoácidos de SARS-COV2 y otras cepas de coronavirus, visualizamos el MSA de aminoácidos que también se obtuvieron de nuestro análisis filogenético. Esto también nos ayudará a comprender si todas las mutaciones a nivel de nucleótidos se llevan a cabo a nivel de AA o no.
+
+Salida para MSA a Nivel de AA:
+
+El archivo de salida que contiene el MSA a nivel de AA se encuentra en la subcarpeta bajo la carpeta denominada “DESCARGAR ARCHIVOS TEMPORALES DE TRABAJOS”. Esta salida se obtuvo del análisis filogenético descrito anteriormente.
+
+![](images/012.png)
+
+Figura: Alineamiento Múltiple de Secuencias a nivel de aminoácidos para los coronavirus de SARS-COV2 humano, murciélago y pangolín (visualización utilizando el software UGENE).
+
+
+El MSA de SARS-COV2 humano, SARS de murciélago, coronavirus de murciélago y coronavirus de pangolín en la figura anterior representa las diferencias en las secuencias a nivel de AA. Hay una disimilitud del 7-9 % entre el SARS-COV-2 humano y el coronavirus de pangolín, mientras que se observa una disimilitud del 15-17% entre el SARS-COV-2 humano y el coronavirus de murciélago. Esto también indica que no todas las variaciones a nivel de nucleótidos se transfieren a nivel de AA, ya que hay un porcentaje mayor de variaciones a nivel de nucleótidos que a nivel de AA. Además, de manera similar a la tendencia en la variación a nivel de nucleótidos, el SARS-COV-2 es más similar al coronavirus de pangolín que al SARS de murciélago y al coronavirus de murciélago.
+
+# Conclusión Final
+
+El análisis filogenético y el alineamiento múltiple de secuencias (MSA) basado en estos datos (12 muestras) indican claramente que el coronavirus de pangolín es más similar al SARS-COV2 humano. Es probable que el SARS-COV-2 humano se haya originado a partir del coronavirus de pangolín. Esto también fue sugerido por muchos grupos de investigación, incluyendo a Zhang et al (https://www.sciencedirect.com/science/article/pii/S0960982220303602).

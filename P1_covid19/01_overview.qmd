@@ -12,11 +12,73 @@ editor: source
 warning: false
 ---
 
-## Introducción
+# Introducción
+
+## Los Coronavirus
 
 Los coronavirus son un grupo diverso de virus con uno de los genomas más largos de todos los virus de ARN conocidos. El elemento común de todos los coronavirus son sus proteínas en forma de corona en el exterior (de ahí obtienen su nombre), llamadas proteínas de espiga (*spike*). En conjunto, esta gran familia de virus infecta aves, animales y, más comúnmente, pequeños mamíferos como los murciélagos. Varios coronavirus infectan a los seres humanos y generalmente causan síntomas leves. Más recientemente, estos patógenos han sido responsables de varios brotes de enfermedades notablemente asociados con una forma aguda de infección. Estos brotes incluyen el brote del síndrome respiratorio agudo severo (SARS) de 2002-2003 en Asia, el brote del síndrome respiratorio de Oriente Medio (MERS) en Oriente Medio y Corea del Sur en 2015, y el brote más reciente en 2019. Muchos de los brotes tuvieron su origen en China y se propagaron primero en países asiáticos. Los brotes se clasifican como epidemias (un brote local) y pandemias (un brote global). El brote más reciente es una pandemia y fue causado por un coronavirus previamente no identificado en humanos (SARS-CoV-2, también conocido como COVID-19) y surgió inesperadamente en China en diciembre de 2019.
 
+![](images/001.png)
 
+Desde la aparición de formas agudas de este virus, se han dedicado muchos recursos a la investigación de los coronavirus animales. Se descubrió que los coronavirus de muchos subtipos diferentes proliferan en numerosos huéspedes aviares y mamíferos. Se parecen entre sí en morfología y estructura química. Por ejemplo, los coronavirus de humanos y bovinos causan respuestas inmunitarias similares. Hasta ahora, no hay evidencia de que los coronavirus humanos puedan transmitirse a través de animales. En animales, diferentes cepas de coronavirus invaden varios tejidos y causan una variedad de enfermedades, pero en humanos solo se ha demostrado que causan infecciones leves del tracto respiratorio superior, es decir, resfriados comunes. En raras ocasiones, la infección por coronavirus gastrointestinal se ha asociado con brotes de diarrea en niños, pero estos virus entéricos no están bien caracterizados.
 
+## Período de Incubación y Síntomas
 
+Aproximadamente uno de cada cinco resfriados comunes son causados por coronavirus, los cuales causan infección invadiendo el tracto respiratorio a través de la nariz. Al principio, el virus se replica, invadiendo tantas células como sea posible antes de que se active la respuesta inmune en todo el cuerpo. El período de tiempo entre la entrada del virus y la aparición de síntomas de la enfermedad se denomina "período de incubación". En el caso de los coronavirus, en promedio, este período de incubación suele durar 3 días. Los síntomas típicos que siguen son similares a los del resfriado común: obstrucción nasal, estornudos, secreción nasal y ocasionalmente tos. La enfermedad se resuelve en unos pocos días, durante los cuales el virus se elimina en las secreciones nasales. Típicamente, los resfriados comunes causados por coronavirus permanecen en el tracto respiratorio superior. Sin embargo, la enfermedad más grave es causada por la infección de las vías respiratorias inferiores. Esta infección puede volverse muy peligrosa ya que afecta la función de los alvéolos, donde las moléculas de oxígeno y dióxido de carbono se transfieren de ida y vuelta a través del torrente sanguíneo. Los alvéolos están compuestos por capas únicas de un pequeño número de células que forman un saco que se encuentra al final del árbol respiratorio. Estos sacos están dispuestos en racimos por todo el pulmón. Si el virus infecta los alvéolos, la muerte celular limita el intercambio de oxígeno y desencadena una respuesta inmune severa. Hay algunos informes de que el virus afecta otros tejidos también, pero estos aún están siendo investigados.
 
+![](images/002.png)
+
+Muchas cepas de coronavirus se encuentran en animales como sus huéspedes primarios. Desde un punto de vista evolutivo, la supervivencia y replicación de un patógeno depende de un huésped funcional. Es por eso que la mayoría de los virus típicamente no causan la muerte en un ambiente establecido. Sin embargo, a veces, un virus puede propagarse entre huéspedes, es decir, diferentes especies animales. Estos son especialmente peligrosos ya que el equilibrio huésped-patógeno se ve perturbado por un virus intruso, ya que el sistema inmunológico no fue entrenado y es incapaz de reconocerlo y combatirlo. Los huéspedes primarios de los coronavirus SARS y MERS fueron los murciélagos. Se cree que el virus SARS se transfirió primero de murciélagos a civetas (pequeños mamíferos nocturnos que se comen en China) y solo luego a humanos. Las jaulas de civetas que se vendían en los mercados de China se probaron y se encontró que contenían el coronavirus SARS. En cuanto al MERS, el huésped intermedio entre murciélagos y humanos se sospechaba que eran los camellos. Actualmente, hay varios programas de vigilancia en todo el mundo para rastrear los coronavirus en animales salvajes e identificar posibles huéspedes intermedios. Hay evidencia emergente de que el nuevo coronavirus SARS-COV-2 está estrechamente relacionado con la variante del murciélago, lo que lo convierte en un huésped primario sospechoso que podría haber propagado el virus a los humanos a través de un portador intermedio [ref]. Los coronavirus humanos más comunes no se transmitieron de animales a humanos, sino que utilizaron a los humanos como sus huéspedes naturales, según el CDC. Estos se llaman 229E, NL63, OC43 y HKU1. Son diferentes de los coronavirus transmitidos por animales porque se cree que han evolucionado para preservar el equilibrio entre huésped y patógeno humano, maximizando la propagación en la población humana sin síntomas graves que eventualmente lleven a la muerte en pacientes con comorbilidades presentes (patogenicidad). La mayoría de las personas se infectan con uno o más de estos virus en algún momento de sus vidas.
+
+![](images/003.png)
+
+## Transmisión
+
+Los coronavirus se transmiten típicamente a través de gotas respiratorias (tos, estornudos). Recientemente, se han iniciado estudios sobre la transmisión oral-fecal para ver si la excreción viral de pacientes asintomáticos puede causar transmisión sin tos y estornudos. Hay varios aspectos en la transmisión viral y el peligro de transmisión sin contacto directo. La mayoría de los virus no pueden permanecer intactos y viables durante más de un día en superficies expuestas fuera de un huésped vivo, ya que su membrana lipídica se daña fácilmente por el sol, el calor y el agua. Si el lípido viral que protege el ARN en su interior puede llegar a la piel, todavía se ve retenido por capas de células inaccesibles para tales partículas. Sin embargo, una vez que llega a la membrana mucosa de la nariz y el tracto respiratorio superior, comienza a replicarse rápidamente secuestrando la señalización normal y la maquinaria de producción de proteínas que estas células utilizan todo el tiempo.
+
+# Resumen del Proyecto
+
+## COVID-19: Origen y Patogénesis
+
+COVID-19 significa "Enfermedad del CoronaVirus" y 19 es el año en que comenzó esta pandemia, 2019. El patógeno que causa esta enfermedad es el SARS-COV-2, Síndrome Respiratorio Agudo Severo Coronavirus 2. En este proyecto exploraremos este coronavirus patógeno en sí, así como la enfermedad causada por él. También investigaremos su origen y cuánto se relaciona con las cepas de coronavirus humanos ya existentes. A continuación, veremos cuáles son los componentes importantes del virus a través de los cuales entran en la célula humana. También analizaremos en qué se diferencia (en términos de mutaciones) de otras cepas de coronavirus. Por último, veremos cómo podemos identificar firmas importantes que pueden diferir significativamente bajo tratamiento terapéutico (farmacológico) y en condiciones no tratadas.
+
+## Visión General
+
+La pregunta principal que debe abordarse durante cualquier brote viral es comprender su origen e identidad. La respuesta a esta pregunta actúa como fundamento para implementar medidas prácticas instantáneas y planificación potencial para la gestión del brote viral. Esto ayuda a especificar el virus y detectarlo rápidamente para que la pandemia pueda contenerse mediante el desarrollo de fármacos y vacunas. El análisis filogenético es la técnica más útil entre todas para determinar la relación entre los virus existentes y los previamente secuenciados. Además, el alineamiento de secuencias múltiples nos ayudará a entender las variaciones genómicas en los genomas. Además, el análisis exploratorio de datos de perfiles transcriptómicos de pacientes infectados nos ayuda a elucidar los biomarcadores transcriptómicos. Por lo tanto, este proyecto está diseñado para explorar los métodos bioinformáticos clave que se pueden utilizar para entender el origen, la patogénesis y para identificar firmas importantes para una pandemia viral como la COVID-19. Aquí, exploraremos datos públicos disponibles asociados con la pandemia global de COVID-19. Estos incluyen bases de datos de datos genómicos, formatos de datos, así como terminología experimental y clínica clave utilizada en la recopilación de datos. También discutiremos y veremos cómo métodos analíticos como el alineamiento de secuencias múltiples (MSA) y el análisis filogenético pueden utilizarse para estudiar relaciones evolutivas entre diferentes genomas virales y ayudar a interpretar la variabilidad genómica. A continuación, también aprenderemos cuáles son los componentes importantes de la patogénesis del SARS-COV2, o desarrollo de la enfermedad. Esto incluye la organización del genoma del SARS-COV-2, sus genes y las proteínas virales que produce utilizando la maquinaria de transcripción y traducción de genes de la célula huésped. Al final, veremos cómo podemos identificar firmas transcriptómicas capaces de distinguir entre muestras tratadas con fármacos (Ruxolitinib) y no tratadas.
+
+# Objetivos del Proyecto
+
+Teniendo en cuenta este contexto de la pandemia de COVID-19, en este proyecto hemos diseñado las siguientes cinco preguntas principales y las abordaremos implementando varias técnicas bioinformáticas:
+
+Objetivo 1: Genómica del SARS-COV2
+
+- Disponibilidad, recolección y compartición de datos
+- Tipos de datos y cómo se generan/produces
+- Recursos: NGS (Secuenciación de Nueva Generación) de muestras virales
+
+Objetivo 2: Origen Zoonótico y Análisis de Variación Genómica
+
+- Árboles filogenéticos - análisis evolutivo
+- Similitud y variabilidad de secuencias de nucleótidos
+- Mutación y Recombinación
+
+Objetivo 3: Comparación con cepas existentes de Coronavirus
+
+- Árboles filogenéticos - análisis evolutivo
+- Similitud y variabilidad de secuencias de nucleótidos
+
+Objetivo 4: Patogénesis del SARS-COV2
+
+- Patogénesis de Covid-19: entrada celular y replicación
+- Estructura genómica del SARS-COV-2: genes, proteínas estructurales y poliproteínas
+- Proteína Spike y sus dominios funcionales
+- Variación genómica y función proteica
+
+Objetivo 5: Elucidación de la firma Transcriptómica para el fármaco Ruxolitinib
+
+- Visión general del fármaco Ruxolitinib
+- Conjunto de datos de Transcriptómica
+- Análisis Exploratorio de Datos: Análisis de Componentes Principales (PCA)
+- Análisis de Expresión Génica Diferencial
+- Métodos de aprendizaje automático no supervisado: PCA y H-clust
+- Interpretación biológica de las firmas
